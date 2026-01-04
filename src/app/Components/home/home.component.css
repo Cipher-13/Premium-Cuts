@@ -1,0 +1,250 @@
+/* ===== Hero Section ===== */
+.content {
+  background-image: url("../../../assets/img/home.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body {
+  height: 520px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.steak {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #931913;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steak img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.title p {
+  color: #fff;
+  font-size: 64px;
+  margin: 0;
+}
+
+article {
+  font-family: "Times New Roman", serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.btn-outline {
+  width: 137px;
+  height: 48px;
+  color: bisque;
+  border-radius: 42px;
+  background: #931913;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+/* ===== Carousel Cards ===== */
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.first {
+  width: 300px;
+  height: 360px;
+  border-radius: 24px;
+  background-image: url("../../../assets/img/carosel-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.second {
+  width: 240px;
+  height: 300px;
+  border-radius: 24px;
+  background-image: url("../../../assets/img/carosel-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ===== Shopify Section ===== */
+.shopify p {
+  margin-top: 10%;
+  font-family: "Times New Roman", serif;
+  font-weight: 700;
+  color: #931913;
+  font-size: 28px;
+  line-height: 32px;
+  font-variant: small-caps;
+}
+
+/* ===== Categorized Cards ===== */
+.categorized .card,
+.featured .card {
+  border-radius: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.categorized .card {
+  width: 384px;
+  height: 325px;
+}
+
+.categorized .one {
+  background-image: url("../../../assets/img/beef.png");
+}
+
+.categorized .two {
+  background-image: url("../../../assets/img/chicken.png");
+}
+
+.categorized .three {
+  background-image: url("../../../assets/img/shrimp.png");
+}
+
+/* ===== Featured Cards ===== */
+.featured {
+  margin-top: 15%;
+}
+
+.featured-row {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;               
+  flex-wrap: wrap;         
+}
+
+.featured-item {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.arc-img {
+  width: 280px;
+  height: auto;
+  display: block;
+  margin-bottom: -250px; 
+  z-index: 1;
+}
+
+.featured .card {
+  width: 240px;
+  height: 240px;
+  margin-top: -5px;
+  border-radius: 50%; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative; 
+  z-index: 0;
+}
+
+.featured .card.one {
+  background-image: url("../../../assets/img/meat-featured.png");
+}
+
+.featured .card.two {
+  background-image: url("../../../assets/img/chicken-featured.png");
+}
+
+.featured .card.three {
+  background-image: url("../../../assets/img/shrimp-featured.jpg");
+}
+
+.badge {
+  position: absolute;
+  bottom: 100px; 
+  width: 80px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E8CEB0;
+  color: #931913;
+  border: 1px solid #931913;
+  z-index: 2;
+}
+.includings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.shopify .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .title p {
+    font-size: 48px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first,
+  .second {
+    width: 80%;
+    height: auto;
+  }
+
+  .categorized .card,
+  .featured .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .shopify p {
+    font-size: 24px;
+  }
+
+  .badge {
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .arc-img {
+    width: 200px;
+    margin-bottom: -180px;
+  }
+}

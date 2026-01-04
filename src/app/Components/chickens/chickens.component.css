@@ -1,0 +1,136 @@
+.content {
+  background-image: url("../../../assets/img/home.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.body {
+  height: 520px;
+  position: relative;
+  z-index: 2;
+}
+
+.includings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  color: #fff;
+  text-align: center;
+}
+
+ .featured p {
+  margin-top: 35px;
+  font-family: "Times New Roman", serif;
+  font-weight: 700;
+  color: #931913;
+  font-size: 28px;
+  line-height: 32px;
+  font-variant: small-caps;
+}
+
+.featured .card {
+  border-radius: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.btn-outline {
+  width: 137px;
+  height: 48px;
+  color: bisque;
+  border-radius: 42px;
+  background: #931913;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+/* ===== Featured Cards ===== */
+.featured {
+  margin-top: 15px;
+}
+
+.featured-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.featured-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.arc-img {
+  width: 280px;
+  height: auto;
+  display: block;
+  margin-bottom: -250px;
+  z-index: 1;
+}
+
+.featured .card {
+  width: 240px;
+  height: 240px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.featured .card.one {
+  background-image: url("../../../assets/img/meat-featured.png");
+}
+
+.featured .card.two {
+  background-image: url("../../../assets/img/chicken-featured.png");
+}
+
+.featured .card.three {
+  background-image: url("../../../assets/img/shrimp-featured.jpg");
+}
+
+.badge {
+  position: absolute;
+  bottom: 100px;
+  width: 80px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E8CEB0;
+  color: #931913;
+  border: 1px solid #931913;
+  z-index: 2;
+}
+
+
+.hold{margin-bottom: 50px;}

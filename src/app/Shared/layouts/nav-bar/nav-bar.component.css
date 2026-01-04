@@ -1,0 +1,37 @@
+.container{padding-top: 15px;}
+
+.nav-links{
+  color: #931913; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size:20px;
+
+}
+
+.logo img{
+  width: 180px;
+  height:88px;
+ object-fit: cover;
+}
+
+.icon,
+.language {
+  border: 1px solid #931913;
+  border-radius: 50px;
+  color: #931913;   
+}
+.language {
+  width: 85px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 14px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;              
+  align-items: center;          
+  justify-content: center;      
+}
